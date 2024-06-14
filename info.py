@@ -51,8 +51,8 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-100
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "postgres://koyeb-adm:UaKRw9J5ETrZ@ep-flat-sky-a21czntf.eu-central-1.pg.koyeb.app/koyebdb")
-DATABASE_NAME = environ.get('DATABASE_NAME', "koyeb-adm")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://madarazbotz:iw3BicIGNcN4u5aL@cluster0.buixxhs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # Premium And Referal Settings
